@@ -1,0 +1,61 @@
+baseURL: 'https://1313-i44a9xgjjzdqq63qv9onu-6532622b.e2b.dev'
+languageCode: 'zh-cn'
+title: '卡片式博客演示 - PaperMod Cards'
+theme: 'papermod-cards'
+
+params:
+  env: development
+  title: 卡片式博客演示
+  description: Hugo PaperMod 主题卡片式布局演示
+  keywords: [Blog, Portfolio, PaperMod, Cards]
+  author: Demo
+  
+  # 主页信息模式
+  homeInfoParams:
+    Title: "欢迎来到卡片式博客 🎉"
+    Content: 这是一个演示卡片式文章布局的Hugo博客，使用修改后的PaperMod主题。文章以美观的卡片形式展示，支持响应式设计。
+
+  socialIcons:
+    - name: github
+      url: "https://github.com"
+    - name: twitter
+      url: "https://twitter.com"
+
+  # 显示阅读时间
+  ShowReadingTime: true
+  # 显示分享按钮
+  ShowShareButtons: true
+  # 显示文章目录
+  ShowToc: true
+  # 显示代码复制按钮
+  ShowCodeCopyButtons: true
+  # 显示面包屑导航
+  ShowBreadCrumbs: true
+  # 显示文章编辑链接
+  ShowPostNavLinks: true
+
+menu:
+  main:
+    - identifier: home
+      name: 首页
+      url: /
+      weight: 10
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 20
+    - identifier: archive
+      name: 归档
+      url: /archives
+      weight: 30
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 40
+
+# 启用搜索功能
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
